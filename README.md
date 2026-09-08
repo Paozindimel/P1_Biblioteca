@@ -1,5 +1,130 @@
-# P1_Biblioteca
-Aluno 1: Beatriz Gonçalves Silva Costa
+#P1 - Sistema de Gestão de Biblioteca (Sisbiblioteca)
+
+Projeto desenvolvido para a **Atividade Prática - P1**, com o objetivo de desenvolver um sistema de gestão de biblioteca utilizando Java, Spring Boot, Spring Data JPA e banco de dados H2.
+
+---
+
+## Integrantes
+
+**Nome:** BEATRIZ GONÇALVES SILVA COSTA
+
+
+---
+
+##  Tecnologias utilizadas
+
+* Java 17+
+* Spring Boot
+* Spring Data JPA
+* Hibernate
+* H2 Database
+* Maven
+* Lombok
+
+---
+
+##  Objetivo do projeto
+
+O Sisbiblioteca é um sistema desenvolvido para realizar o cadastro e consulta de **autores e livros**, utilizando persistência de dados através do Spring Data JPA.
+
+O projeto utiliza relacionamento entre as entidades **Autor** e **Livro**, sendo que um autor pode possuir vários livros.
+
+---
+
+##  Estrutura do projeto
+
+```text
+src/main/java/com/lab/jpa/sisbiblioteca/
+
+├── config/
+│   └── DataInitializer.java
+│
+├── model/
+│   ├── Autor.java
+│   └── Livro.java
+│
+├── repository/
+│   ├── AutorRepository.java
+│   └── LivroRepository.java
+│
+└── SisbibliotecaApplication.java
+```
+
+---
+
+##  Funcionalidades
+
+O sistema possui um menu interativo executado através do console.
+
+### Funcionalidades implementadas
+
+* Cadastro de autores
+* Listagem de autores
+* Cadastro de livros
+* Listagem de livros
+* Busca de livros por título
+* Busca de livros por autor
+* Busca de livros por ano
+* Exclusão de autores
+* Validação antes da exclusão de autores
+* Encerramento da aplicação
+
+---
+
+#  Modificações realizadas
+
+Além das funcionalidades apresentadas no roteiro inicial, foram realizadas modificações no sistema.
+
+## 1. Exclusão de autores
+
+Foi adicionada uma opção para excluir autores cadastrados no sistema.
+
+Para realizar a exclusão, o usuário informa o ID do autor que deseja remover.
+
+Antes da exclusão, o sistema verifica se o autor informado existe.
+
+---
+
+## 2. Validação para exclusão de autores
+
+Foi adicionada uma validação para verificar se o autor possui livros cadastrados.
+
+Caso existam livros relacionados ao autor, a exclusão não é realizada.
+
+Essa validação evita problemas com o relacionamento entre **Autor** e **Livro**.
+
+---
+
+## 3. Busca de livros por título
+
+Foi adicionada uma opção para realizar pesquisas de livros utilizando o título.
+
+A pesquisa permite encontrar livros utilizando parte do título informado e não diferencia letras maiúsculas e minúsculas.
+
+---
+
+## 4. Busca de livros por autor
+
+Foi adicionada uma opção para consultar os livros relacionados a um determinado autor.
+
+O usuário informa o ID do autor e o sistema apresenta os livros associados a ele.
+
+---
+
+## 5. Busca de livros por ano
+
+Foi adicionada uma opção para pesquisar livros utilizando o ano de publicação como critério.
+
+O usuário informa o ano desejado e o sistema apresenta os livros correspondentes.
+
+---
+
+
+**Atividade Prática - P1: Sistema de Gestão de Biblioteca (Sisbiblioteca)**
+
+Projeto desenvolvido utilizando Java 17+, Spring Boot, Spring Data JPA, H2 Database e CommandLineRunner.
+
+As modificações realizadas no projeto estão descritas neste README.
 
 Funcionalidades Novas
 
