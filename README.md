@@ -1,4 +1,4 @@
-#P1 - Sistema de Gestão de Biblioteca (Sisbiblioteca)
+## P1 - Sistema de Gestão de Biblioteca (Sisbiblioteca)
 
 Projeto desenvolvido para a **Atividade Prática - P1**, com o objetivo de desenvolver um sistema de gestão de biblioteca utilizando Java, Spring Boot, Spring Data JPA e banco de dados H2.
 
