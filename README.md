@@ -6,16 +6,8 @@ Excluir um Autor
 A ideia é poder escolher o autor pelo ID e excluir ele.
 Execução: 
 Coloquei a opção no switch e crie a função
-(Os “—-----” Siginifica que existe algo no código porém é irrelevante para a situação atual)
         while (continuar) {
-            —-----------------------------------------
-            —-----------------------------------------
-            —-----------------------------------------
-            —-----------------------------------------
-            —-----------------------------------------
             System.out.println("5 - Excluir Autor");
-            —-----------------------------------------
-            —-----------------------------------------
 
 		Adicionei também:
 case "5" -> {
