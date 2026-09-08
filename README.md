@@ -2,6 +2,7 @@
 Aluno 1: Beatriz Gonçalves Silva Costa
 
 Funcionalidades Novas
+
 Excluir um Autor
 A ideia é poder escolher o autor pelo ID e excluir ele.
 Execução: 
@@ -17,7 +18,9 @@ case "5" -> {
  		
 		A função:
 Tentativas das função
+
 Primeira tentativa:
+
 private void excluirAutores(Scanner scanner) {
     System.out.print("Digite o nome do autor: ");
     var nome = scanner.nextLine();
@@ -59,6 +62,7 @@ private void excluirAutores(Scanner scanner) {
     }
 
 Terceira tentativa
+
     private void excluirAutores(Scanner scanner) {
         System.out.print("Digite o ID do autor: ");
         var idEX = scanner.nextLine();
@@ -84,6 +88,7 @@ Terceira tentativa
 
     }
 Quarta tentativa:
+
     private void excluirAutores(Scanner scanner) {
         System.out.print("Digite o ID do autor: ");
         var idEX = scanner.nextLine();
@@ -109,6 +114,7 @@ Quarta tentativa:
     }catch (NumberFormatException e);
 
 Quinta tentativa:
+
     private void excluirAutores(Scanner scanner) {
         System.out.print("Digite o ID do autor: ");
         var idEX = scanner.nextLine();
@@ -135,14 +141,18 @@ Quinta tentativa:
     }
 
 Essa de cima (A 5) está correta porém quando fui testar a aplicação finalizou porque esqueci de retornar para o menu então troquei o case 5 por:
+
                 case "5" -> {
                     excluirAutores(scanner);
                     yield true;
                 }
 
 Impedir que o autor seja excluído se houver livro vinculado a ele
+
 Tentativas da função
+
 Tentativa 1
+
     private void excluirAutores(Scanner scanner) {
         System.out.print("Digite o ID do autor: ");
         var idEX = scanner.nextLine();
@@ -172,6 +182,7 @@ Tentativa 1
     }
 
 Tentativa 2:
+
 private void excluirAutores(Scanner scanner) {
     System.out.print("Digite o ID do autor: ");
     var idEX = scanner.nextLine();
@@ -202,6 +213,7 @@ private void excluirAutores(Scanner scanner) {
     }
 }
 
+
 Essa deu certo, não foi tão difícil, só tive dificuldade na hora de rodar mas consegui resolver
 
 
@@ -209,7 +221,9 @@ Essa deu certo, não foi tão difícil, só tive dificuldade na hora de rodar ma
 
 
 Buscar livro por título
-Tentativa 1 -
+
+Tentativa 1 
+
 private void buscarLivroPorTitulo(Scanner scanner) {
     System.out.print("Digite o título ou parte do título: ");
     var titulo = scanner.nextLine();
@@ -236,6 +250,7 @@ private void buscarLivroPorTitulo(Scanner scanner) {
 }
 
 tentativa 2:
+
 private void buscarLivroPorTitulo(Scanner scanner) {
     System.out.print("Digite o título ou parte do título: ");
     var titulo = scanner.nextLine();
@@ -269,7 +284,9 @@ Eu também mudei no switch :
 System.out.println("6 - Buscar Livro por Título");
 
 Listar livro de um autor
+
 Tentativa 1:
+
 private void listarLivrosPorAutor(Scanner scanner) {
     System.out.print("Digite o ID do autor: ");
     var idAutor = scanner.nextLine();
@@ -305,6 +322,7 @@ private void listarLivrosPorAutor(Scanner scanner) {
 }
 
 Tentativa 3:
+
 private void listarLivrosPorAutor(Scanner scanner) {
     System.out.print("Digite o ID do autor: ");
     var idAutorStr = scanner.nextLine();
@@ -340,6 +358,7 @@ private void listarLivrosPorAutor(Scanner scanner) {
 }
 
 Esse está certo, e também adicionei no switch 
+
 case "7" -> {
                     listarLivrosPorAutor(scanner);
                     yield true;
@@ -349,7 +368,9 @@ System.out.println("7 - Listar Livros por Autor");
 
 
 Listar livros por ano
+
 Tentativa 1:
+
 private void listarLivrosPorAno(Scanner scanner) {
     System.out.print("Digite o ano de lançamento: ");
     var ano = scanner.nextInt();
@@ -377,6 +398,7 @@ private void listarLivrosPorAno(Scanner scanner) {
 
 
 Tentativa 2:
+
 private void listarLivrosPorAno(Scanner scanner) {
     System.out.print("Digite o ano de lançamento: ");
     var ano = scanner.nextInt();
